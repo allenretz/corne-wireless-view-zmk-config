@@ -12,42 +12,42 @@
     combos {
         compatible = "zmk,combos";
 
-        LWIN_C {
+        C_LWIN {
             bindings = <&kp LWIN>;
             key-positions = <1 13>;
         };
 
-        LALT_C {
+        C_LALT {
             bindings = <&kp LEFT_ALT>;
             key-positions = <2 14>;
         };
 
-        LCTRL_C {
+        C_LCTRL {
             bindings = <&kp LCTRL>;
             key-positions = <3 15>;
         };
 
-        LSHIFT_C {
+        C_LSHIFT {
             bindings = <&kp LSHFT>;
             key-positions = <4 16>;
         };
 
-        LHOME_C {
+        C_LHOME {
             bindings = <&kp HOME>;
             key-positions = <13 25>;
         };
 
-        LDELETE_C {
+        C_DELETE {
             bindings = <&kp DELETE>;
             key-positions = <14 26>;
         };
 
-        LINSERT_C {
+        C_LINSERT {
             bindings = <&kp INS>;
             key-positions = <15 27>;
         };
 
-        LEND_C {
+        C_END {
             bindings = <&kp END>;
             key-positions = <16 28>;
         };
@@ -57,12 +57,12 @@
             key-positions = <7 19>;
         };
 
-        RCTRL_C {
+        C_RCTRL {
             bindings = <&kp RCTRL>;
             key-positions = <8 20>;
         };
 
-        RALT_C {
+        C_RALT {
             bindings = <&kp RIGHT_ALT>;
             key-positions = <9 21>;
         };
@@ -72,22 +72,22 @@
             key-positions = <10 22>;
         };
 
-        RLEFT_C {
+        C_RLEFT_ARROW {
             bindings = <&kp LEFT_ARROW>;
             key-positions = <19 31>;
         };
 
-        RDOWN_C {
+        C_DOWN_ARROW {
             bindings = <&kp DOWN_ARROW>;
             key-positions = <20 32>;
         };
 
-        RUP_C {
+        C_UP_ARROW {
             bindings = <&kp UP_ARROW>;
             key-positions = <21 33>;
         };
 
-        RRIGHT_C {
+        C_RIGHT_ARROW {
             bindings = <&kp RIGHT_ARROW>;
             key-positions = <22 34>;
         };
