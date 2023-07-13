@@ -1,0 +1,4 @@
+= Corne Wireless Config
+:author: Allen Retzler
+
+https://nickcoutsos.github.io/keymap-editor/[GUI Editor]
