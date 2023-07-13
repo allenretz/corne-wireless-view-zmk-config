@@ -91,6 +91,11 @@
             bindings = <&kp RIGHT_ARROW>;
             key-positions = <22 34>;
         };
+
+        new_combo {
+            bindings = <&kp RC(A)>;
+            key-positions = <13 8 20>;
+        };
     };
 
     keymap {
