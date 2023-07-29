@@ -108,7 +108,12 @@
             slow-release;
         };
 
-        new_combo {
+        C_TO_0a {
+            bindings = <&to 0>;
+            key-positions = <38 39>;
+        };
+
+        C_TO_0b {
             bindings = <&to 0>;
             key-positions = <37 40>;
         };
