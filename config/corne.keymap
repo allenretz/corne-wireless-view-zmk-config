@@ -12,136 +12,100 @@
     combos {
         compatible = "zmk,combos";
 
-        C_LWIN {
-            bindings = <&kp LWIN>;
+        C_LHOME {
+            bindings = <&kp HOME>;
             key-positions = <1 13>;
             slow-release;
         };
 
-        C_LALT {
-            bindings = <&kp LEFT_ALT>;
+        C_LDELETE {
+            bindings = <&kp DELETE>;
             key-positions = <2 14>;
+            slow-release;
+        };
+
+        C_LINS {
+            bindings = <&kp INSERT>;
+            key-positions = <3 15>;
+            slow-release;
+        };
+
+        C_LEND {
+            bindings = <&kp END>;
+            key-positions = <4 16>;
+            slow-release;
+        };
+
+        C_LGUI {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <13 25>;
+            slow-release;
+        };
+
+        C_LALT {
+            bindings = <&kp LALT>;
+            key-positions = <14 26>;
             slow-release;
         };
 
         C_LCTRL {
             bindings = <&kp LCTRL>;
-            key-positions = <3 15>;
-            slow-release;
-        };
-
-        C_LSHIFT {
-            bindings = <&kp LSHFT>;
-            key-positions = <4 16>;
-            slow-release;
-        };
-
-        C_LHOME {
-            bindings = <&kp HOME>;
-            key-positions = <13 25>;
-            slow-release;
-        };
-
-        C_DELETE {
-            bindings = <&kp DELETE>;
-            key-positions = <14 26>;
-            slow-release;
-        };
-
-        C_LINSERT {
-            bindings = <&kp INS>;
             key-positions = <15 27>;
             slow-release;
         };
 
-        C_END {
-            bindings = <&kp END>;
+        C_LSHIFT {
+            bindings = <&kp LEFT_SHIFT>;
             key-positions = <16 28>;
             slow-release;
         };
 
-        RSHIFT_C {
-            bindings = <&kp RSHIFT>;
+        C_RLEFT {
+            bindings = <&kp LEFT>;
             key-positions = <7 19>;
             slow-release;
         };
 
-        C_RCTRL {
-            bindings = <&kp RCTRL>;
+        C_RDOWN {
+            bindings = <&kp DOWN_ARROW>;
             key-positions = <8 20>;
             slow-release;
         };
 
-        C_RALT {
-            bindings = <&kp RIGHT_ALT>;
+        C_RUP {
+            bindings = <&kp UP_ARROW>;
             key-positions = <9 21>;
             slow-release;
         };
 
-        RWIN_C {
-            bindings = <&kp RWIN>;
+        C_RRIGHT {
+            bindings = <&kp RIGHT>;
             key-positions = <10 22>;
             slow-release;
         };
 
-        C_RLEFT_ARROW {
-            bindings = <&kp LEFT_ARROW>;
+        C_RSHIFT {
+            bindings = <&kp RIGHT_SHIFT>;
             key-positions = <19 31>;
             slow-release;
         };
 
-        C_DOWN_ARROW {
-            bindings = <&kp DOWN_ARROW>;
+        C_RCTRL {
+            bindings = <&kp RIGHT_CONTROL>;
             key-positions = <20 32>;
             slow-release;
         };
 
-        C_UP_ARROW {
-            bindings = <&kp UP_ARROW>;
+        C_RALT {
+            bindings = <&kp RALT>;
             key-positions = <21 33>;
             slow-release;
         };
 
-        C_RIGHT_ARROW {
-            bindings = <&kp RIGHT_ARROW>;
+        C_RWIN {
+            bindings = <&kp RWIN>;
             key-positions = <22 34>;
             slow-release;
-        };
-
-        C_TOP_LEFT_TP {
-            bindings = <&trans>;
-            key-positions = <4 3 2 1 0>;
-            timeout-ms = <70>;
-        };
-
-        C_MID_LEFT_TP {
-            bindings = <&trans>;
-            key-positions = <12 12 13 14 15 16>;
-            timeout-ms = <70>;
-        };
-
-        C_BOT_LEFT_TP {
-            bindings = <&trans>;
-            key-positions = <24 25 26 27 28>;
-            timeout-ms = <70>;
-        };
-
-        C_TOP_RIGHT_TP {
-            bindings = <&trans>;
-            key-positions = <7 9 10 11 8>;
-            timeout-ms = <70>;
-        };
-
-        C_MID_RIGHT_TP {
-            bindings = <&trans>;
-            key-positions = <19 20 21 22 23>;
-            timeout-ms = <70>;
-        };
-
-        C_BOT_RIGHT_TP {
-            bindings = <&trans>;
-            key-positions = <35 34 33 32 31>;
-            timeout-ms = <70>;
         };
 
         new_combo {
@@ -162,10 +126,10 @@
 
             label = "Base";
             bindings = <
-&kp ESCAPE  &kp Q  &kp W       &kp E  &kp R      &kp T      &kp Y  &kp U          &kp I    &kp O     &kp P  &kp BACKSPACE
-   &kp TAB  &kp A  &kp S       &kp D  &kp F      &kp G      &kp H  &kp J          &kp K    &kp L  &kp SEMI        &kp SQT
- &kp GRAVE  &kp Z  &kp X       &kp C  &kp V      &kp B      &kp N  &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp BACKSLASH
-                          &kp DELETE  &to 1  &kp SPACE    &kp RET  &to 2  &kp BACKSPACE
+&kp ESCAPE  &kp Q  &kp W       &kp E      &kp R  &kp T    &kp Y      &kp U          &kp I    &kp O     &kp P  &kp BACKSPACE
+   &kp TAB  &kp A  &kp S       &kp D      &kp F  &kp G    &kp H      &kp J          &kp K    &kp L  &kp SEMI        &kp SQT
+ &kp GRAVE  &kp Z  &kp X       &kp C      &kp V  &kp B    &kp N      &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp BACKSLASH
+                          &kp DELETE  &kp SPACE  &to 1    &to 2  &kp ENTER  &kp BACKSPACE
             >;
         };
 
